@@ -15,6 +15,21 @@
 // BONUS 2:
 // Organizzare i singoli membri in card/schede
 
+// `
+// <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+
+//     <div class="card" style="width: 18rem;">
+//         <img class="card-img-top" src="./images/wayne-barnett-founder-ceo.jpg" alt="Wayne Barnett">
+//         <div class="card-body">
+//             <h5 class="card-title">Wayne Barnett</h5>
+//             <p class="card-text">Founder & CEO</p>
+//         </div>
+//     </div>
+
+// </div>`
+
+
+
 
 const team = [
     {
@@ -61,6 +76,11 @@ const team = [
 
     console.log('image: ' + employee.image);
 
-
-
   }
+
+function createGrill() {
+
+    const container = document.getElementById("app");
+
+
+}
