@@ -90,7 +90,7 @@ function createGrill() {
 
         const employee = team[i];
     
-        
+        createCard(employee)
     
       }
 }
