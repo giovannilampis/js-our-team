@@ -62,21 +62,23 @@ const team = [
       role: 'Graphic Designer',
       image: 'barbara-ramos-graphic-designer.jpg',
     },
-  ];
+];
 
-  console.log(team);
+console.log(team);
 
-  for( let i = 0; i < team.length; i++ ) {
+for( let i = 0; i < team.length; i++ ) {
 
-    const employee = team[i];
+const employee = team[i];
 
-    console.log('name: ' + employee.name);
+console.log('name: ' + employee.name);
 
-    console.log('role: ' + employee.role);
+console.log('role: ' + employee.role);
 
-    console.log('image: ' + employee.image);
+console.log('image: ' + employee.image);
 
-  }
+}
+
+createGrill();
 
 function createGrill() {
 
@@ -97,6 +99,21 @@ function createGrill() {
 
 function createCard(employee) {
 
-    console.log(employee);
+    // console.log(employee);
+
+    const htmlContent = `
+    <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+    
+        <div class="card" style="width: 18rem;">
+             <img class="card-img-top" src=./images/${employee.image} alt="${employee.name}">
+             <div class="card-body">
+                 <h5 class="card-title">${employee.name}</h5>
+                 <p class="card-text">${employee.role}</p>
+             </div>
+        </div>
+    
+    </div>
+    `;
+
 
 }
