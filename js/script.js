@@ -82,5 +82,21 @@ function createGrill() {
 
     const container = document.getElementById("app");
 
+    const row = document.createElement("div");
+
+    row.className = "row";
+
+    for( let i = 0; i < team.length; i++ ) {
+
+        const employee = team[i];
+    
+        
+    
+      }
+}
+
+function createCard(employee) {
+
+    console.log(employee);
 
 }
