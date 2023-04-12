@@ -92,16 +92,20 @@ function createGrill() {
 
         const employee = team[i];
     
-        createCard(employee)
-    
-      }
+        const template = createCard(employee);
+
+        row.innerHTML += template; 
+
+    }
+
+    container.appendChild(row);
 }
 
 function createCard(employee) {
 
     // console.log(employee);
 
-    const htmlContent = `
+    const templateHtml = `
     <div class="col-12 col-sm-12 col-md-6 col-lg-4">
     
         <div class="card" style="width: 18rem;">
@@ -115,5 +119,5 @@ function createCard(employee) {
     </div>
     `;
 
-
+    return templateHtml;
 }
