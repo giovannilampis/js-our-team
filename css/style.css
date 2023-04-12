@@ -21,3 +21,7 @@
 img {
     width: 100%;
 }
+
+#app .card {
+    margin: 1rem auto;
+}
